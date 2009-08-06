@@ -1,4 +1,4 @@
-<?php
+<?
 /**
  * Constants.php
  *
@@ -7,7 +7,7 @@
  * the login script.
  *
  * Written by: Jpmaster77 a.k.a. The Grandmaster of C++ (GMC)
- * Last Updated: August 19, 2004
+ * Last Updated: August 2, 2009 by Ivan Novak
  */
  
 /**
@@ -30,6 +30,7 @@ define("TBL_USERS", "users");
 define("TBL_ACTIVE_USERS",  "active_users");
 define("TBL_ACTIVE_GUESTS", "active_guests");
 define("TBL_BANNED_USERS",  "banned_users");
+define("TBL_MAIL", "mail");
 
 /**
  * Special Names and Level Constants - the admin
@@ -43,6 +44,7 @@ define("TBL_BANNED_USERS",  "banned_users");
 define("ADMIN_NAME", "admin");
 define("GUEST_NAME", "Guest");
 define("ADMIN_LEVEL", 9);
+define("AUTHOR_LEVEL", 5);
 define("USER_LEVEL",  1);
 define("GUEST_LEVEL", 0);
 
@@ -78,9 +80,9 @@ define("COOKIE_PATH", "/");  //Avaible in whole domain
  * sends to users, and whether to send a
  * welcome email to newly registered users.
  */
-define("EMAIL_FROM_NAME", "YourName");
-define("EMAIL_FROM_ADDR", "youremail@address.com");
-define("EMAIL_WELCOME", false);
+define("EMAIL_FROM_NAME", "Ivan Novak");
+define("EMAIL_FROM_ADDR", "inovak1@gmail.com");
+define("EMAIL_WELCOME", true);
 
 /**
  * This constant forces all users to have
@@ -88,4 +90,15 @@ define("EMAIL_WELCOME", false);
  * converted automatically.
  */
 define("ALL_LOWERCASE", false);
+
+/**
+ * This defines the absolute path
+ */
+define("ABSPATH", dirname(__FILE__).'/');
+
+/**
+ * This boolean constant controls wheter or
+ * not the user to user mail function is active
+ */
+define("MAIL", true)
 ?>
